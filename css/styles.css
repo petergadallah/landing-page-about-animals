@@ -1,0 +1,192 @@
+
+body{margin-top:0}
+
+#paragraph{
+color: rgb(138,4,4);
+ font-size:1.8em;
+font-weight:bold;
+ margin:15px;
+}
+
+h1{
+  margin:15px;
+  font-size: 2.5em;
+  padding-left: 10px;
+  background-color:blue;
+  color: #b3fff0;
+  border:2px solid black
+}
+
+/*listOne is the unordered list at the first section*/
+#listOne{
+  font-size:2em
+}
+
+/*list two is the ordered list in listOne (types of vertebrates).*/
+#listTwo{
+font-size:0.7em;
+color:blue;
+font-weight: bold
+}
+
+/*listThree is the unordered list in listTwo (types of fishes and types of mammals)*/
+#listThree{
+  color:brown;
+  font-family:monospace
+}
+
+/*the grid is in the last section*/
+#grid {
+  display:grid;
+  border: 2pt solid black;
+  grid-template-areas:
+  "aa aa aa "
+  "ba bb bc"
+  "ca cb cc"
+  "da db dc"
+  "ea ea ea";
+  margin:20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr 0.2fr;
+  height:1800px;
+  grid-gap:4%;
+  background-color: rgb(161,27,180);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/*intro is the first item in the grid(at its top)*/
+.intro {
+  background-color: rgb(140,239,252);
+  grid-area:aa;
+  font-size:1.5em;
+  font-family: helvetica;
+ border: 1pt solid black;
+text-align: center;
+color:blue;
+height:3.5em;
+}
+
+/*There are 9 items of animals in the grid*/
+.item{
+  border:1pt solid black;
+   width:auto;
+   height:auto;
+   font-size: 3em;
+   text-align:center;
+justify-content: center;
+background-color: rgb(140,239,252);
+margin: 15px;
+}
+
+/*the name of the animal in each item in the grid*/
+.name {
+  background-color: red;
+  height: 1.4em;
+background-color: rgb(10,14,194);
+color:rgb(140,239,252)
+}
+
+/*first buttons in the 9 items of the grid (more photos)*/
+.first  {
+    width:60%
+  }
+
+/*second buttons in the 9 items of the grid (information from wikipedia)*/
+.second  {
+      width:85%;
+    }
+
+/*first and second buttons*/
+.button {
+  font-size:0.4em;
+   color:purple;
+   background-Color:white;
+   height:1.6em;
+ }
+
+
+.one{grid-area: ba} /*first animal*/
+.two{grid-area: bb} /*second animal*/
+.three{grid-area: bc} /*third animal*/
+.four{grid-area: ca} /*fourth animal*/
+.five{grid-area: cb} /*fifth animal*/
+.six{grid-area: cc} /*sixth animal*/
+.seven{grid-area: da} /*seventh animal*/
+.eight{grid-area: db} /*eighth animal*/
+.nine{grid-area: dc} /*last animal*/
+
+.end{/*the last item in the grid (at the buttom)*/
+  grid-area:ea;
+text-align: center;
+  background-color: rgb(138,4,4);
+font-size: 2em;
+color:yellow
+}
+
+/*photos inside the items of the grid*/
+.photo {
+  height:200px;;
+  width:100%;
+   align:'bottom';
+ align:'center';
+}
+
+p{
+  font-size: 1.5em;
+}
+
+a{
+  color:rgb(140,239,252; color:inherit;)
+}
+
+p{margin:15px}
+
+/*the navigation buttons*/
+.navbutton{width:200px;
+  height:100%;
+  justify-content: center;
+margin-right: 10px;
+font-size: 1.5em;
+font-family:helvetica;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  background-color:   #0073e6;
+  margin-bottom: 5px;
+  color:white;
+  border:2pt solid blue;
+}
+
+/*margins of sections*/
+#firstdivision{margin-left:20%}
+#seconddivision{margin-right:20%}
+#thirddivision{margin-left:20%}
+#fourthdivision{margin-right:20%}
+
+
+/*the navigation bar*/
+#thenavigationbar{
+position: fixed;
+height:auto;
+background-color: #ccccff;
+border:2px solid black;
+width:98%;
+
+}
+
+
+/*section of HTML document*/
+.part{
+  padding-top:  70px;
+   margin-bottom: 60px
+ }
+
+/*When a section is active*/
+ .active {
+  background-color: #bbe6aa;
+}
+
+/*when a navigation button is active*/
+.active2{
+  background-color: black
+}
